@@ -26,5 +26,6 @@ RUN \
         /root/.cpanm \
         /tmp/*
 COPY --chown=0:0 root/ /
+RUN chmod +x /usr/bin/ddclient.sh
 CMD /usr/bin/ddclient.sh
 VOLUME /config
