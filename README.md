@@ -15,7 +15,7 @@ This will utilize the `ddclient.conf` file in `/path/to/config` or create the de
 
 ## Configuration
 
-For configuration of `ddclient.conf`, please see the [ddclient](https://github.com/ddclient/ddclient) github page or the [original ddclient](https://sourceforge.net/p/ddclient/wiki/Home/) wiki.
+For configuration of `ddclient.conf`, please see the [ddclient](https://github.com/ddclient/ddclient) github page or the [original ddclient](https://ddclient.net/) docs.
 
 ### Example for Cloudflare
 
