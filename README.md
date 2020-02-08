@@ -40,7 +40,7 @@ domain.tld,my.domain.tld
 ```version: '3'
 services:
   ddclient:
-    image: mark3748/ddclient:v3.9.1
+    image: mark3748/ddclient:3.9.1
     container_name: ddclient
     volumes: 
       - /path/to/config:/config
