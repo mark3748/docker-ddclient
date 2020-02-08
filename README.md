@@ -13,6 +13,28 @@ This will utilize the `ddclient.conf` file in `/path/to/config` or create the de
 
 ---
 
+## Configuration
+
+For configuration of `ddclient.conf`, please see the [ddclient](https://github.com/ddclient/ddclient) github page or the [original ddclient](https://sourceforge.net/p/ddclient/wiki/Home/) wiki.
+
+## Example for Cloudflare
+
+```
+##
+## CloudFlare (www.cloudflare.com)
+##
+use=web
+ssl=yes
+protocol=cloudflare,
+server=api.cloudflare.com/client/v4
+login=your-login-email,     
+password=APIKey
+zone=domain.tld,
+domain.tld,my.domain.tld
+```
+
+---
+
 ## docker-compose
 
 ```version: '3'
