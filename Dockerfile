@@ -18,9 +18,9 @@ RUN \
     cpanm \
         Data::Validate::IP \
         JSON::Any && \ 
-    curl -o /tmp/ddclient.zip -L "https://github.com/ddclient/ddclient/archive/v3.9.1.zip" &&\
+    curl -o /tmp/ddclient.zip -L "https://github.com/ddclient/ddclient/archive/v3.10.0_2.zip" &&\
     unzip /tmp/ddclient.zip -d /tmp/ &&\
-    install -Dm755 /tmp/ddclient-3.9.1/ddclient /usr/bin/ && \
+    install -Dm755 /tmp/ddclient-3.10.0_2/ddclient /usr/bin/ && \
     rm -rf \
         /config/.cpanm \
         /root/.cpanm \
