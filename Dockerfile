@@ -1,5 +1,4 @@
-FROM alpine:3.15
-
+FROM alpine:3.17
 RUN \
     apk add --no-cache \
         curl \
@@ -21,11 +20,11 @@ RUN \
     cpanm \
         Data::Validate::IP \
         JSON::Any && \ 
-    curl -o /tmp/ddclient.zip -L "https://github.com/ddclient/ddclient/archive/v3.10.0_2.zip" && \
+    curl -o /tmp/ddclient.zip -L "https://github.com/ddclient/ddclient/archive/v3.10.0.zip" && \
     unzip /tmp/ddclient.zip -d /tmp/ && \
     cd /tmp/ddclient-3.10.0_2 && \
     ./autogen && ./configure && make && make VERBOSE=1 check && \
-    install -Dm755 /tmp/ddclient-3.10.0_2/ddclient /usr/bin/ && \
+    install -Dm755 /tmp/ddclient-3.10.0/ddclient /usr/bin/ && \
     apk del \
         automake \
         autoconf \
